@@ -5,9 +5,12 @@ on:
     types: [created]
 
 jobs:
-  publish-rubygems:
+  build:
     runs-on: ubuntu-latest
+
     steps:
+      - uses: actions/checkout@v1
+
       - name: Release Gem
         uses: cadwallion/publish-rubygems-action@master
         env:
