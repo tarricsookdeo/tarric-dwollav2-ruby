@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "dwolla_v2/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "dwolla_v2"
+  spec.name          = "tarric_dwolla_v2"
   spec.version       = DwollaV2::VERSION
   spec.authors       = ["Stephen Ausman"]
   spec.email         = ["stephen@dwolla.com"]
 
   spec.summary       = "Dwolla V2 Ruby client"
   spec.description   = "Dwolla V2 Ruby client"
-  spec.homepage      = "https://github.com/Dwolla/dwolla-v2-ruby"
+  spec.homepage      = "https://github.com/tarricsookdeo/tarric-dwollav2-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
